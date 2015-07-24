@@ -35,8 +35,7 @@
             android:layout_marginLeft="6dp"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:shadowRadius=""/>
+            android:textSize="25dp"/>
 
     </LinearLayout>
 
