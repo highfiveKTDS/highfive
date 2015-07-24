@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        //추가됨...
+        //추가됨....
         return super.onOptionsItemSelected(item);
     }
 }
