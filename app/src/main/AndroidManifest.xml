@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PostListActivity"
+            android:label="@string/title_activity_post_list" >
+        </activity>
+        <activity
+            android:name=".PostDetailActivity"
+            android:label="@string/title_activity_post_detail" >
+        </activity>
     </application>
 
 </manifest>
