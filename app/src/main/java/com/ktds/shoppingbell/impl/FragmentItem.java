@@ -7,7 +7,7 @@ public interface FragmentItem {
 
     int FRAGMENT_MAX_ITEM = 2;
 
-    int FRAGMENT_ITEM_REGITS_BELL_OF_PRODUCT = 0;
+    int FRAGMENT_ITEM_REGIST_BELL_OF_PRODUCT = 0;
     int FRAGMENT_ITEM_MAIN = 1;
 
 }

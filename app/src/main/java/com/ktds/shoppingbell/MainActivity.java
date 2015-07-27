@@ -20,7 +20,7 @@ public class MainActivity extends FragmentActivity {
 
         pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(new PagerAdapter(getSupportFragmentManager()));
-        pager.setCurrentItem(FragmentItem.FRAGMENT_ITEM_REGITS_BELL_OF_PRODUCT);
+        pager.setCurrentItem(FragmentItem.FRAGMENT_ITEM_REGIST_BELL_OF_PRODUCT);
     }
 
     private class PagerAdapter extends FragmentPagerAdapter {
@@ -31,7 +31,7 @@ public class MainActivity extends FragmentActivity {
 
         @Override
         public Fragment getItem(int position) {
-            if(position== FragmentItem.FRAGMENT_ITEM_REGITS_BELL_OF_PRODUCT) {
+            if(position== FragmentItem.FRAGMENT_ITEM_REGIST_BELL_OF_PRODUCT) {
                 return new RegistBellProductFragment();
             }
             if(position== FragmentItem.FRAGMENT_ITEM_MAIN) {

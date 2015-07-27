@@ -52,7 +52,6 @@ public class PostItemAdaptor extends BaseAdapter {
         }
         convertView.findViewById(R.id.btnLogin);
 
-        //TODO: ConvertView�뿉 �쟻�슜�븷 �쐞�젽 湲곕뒫 �꽌�닠
         return null;
     }
 }

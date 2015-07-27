@@ -18,11 +18,12 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_marginTop="0dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/etModel"
                 android:hint="모델명을 입력하세요. ex)nike-air"
                 android:inputType="text"
                 android:layout_width="match_parent"
@@ -60,6 +61,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/etPrice"
                 android:inputType="number"
                 android:hint="가격을 입력하세요. ex)20000"
                 android:layout_width="match_parent"
@@ -95,19 +97,33 @@
                 android:entries="@array/option_list"/>
         </LinearLayout>
 
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
             <Spinner
                 android:id="@+id/spinnerSizeList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/size_list"/>
 
+        </LinearLayout>
 
+        <Button
+            android:id="@+id/btnRegistBell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="쇼핑벨 신청!"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="오른쪽으로 드래그 해주세요:)"
-            />
+            android:text="오른쪽으로 드래그 해주세요:)"/>
 
     </LinearLayout>
 
