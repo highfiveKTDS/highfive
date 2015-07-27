@@ -50,9 +50,9 @@ public class PostItemAdaptor extends BaseAdapter {
             convertView = inflater.inflate(R.layout.list_view, parent, false);
 
         }
-        convertView.findViewById(R.id.loginId);
+        convertView.findViewById(R.id.btnLogin);
 
-        //TODO: ConvertView에 적용할 위젯 기능 서술
+        //TODO: ConvertView�뿉 �쟻�슜�븷 �쐞�젽 湲곕뒫 �꽌�닠
         return null;
     }
 }
