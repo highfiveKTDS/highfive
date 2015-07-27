@@ -52,7 +52,7 @@ public class PostItemAdaptor extends BaseAdapter {
         }
         convertView.findViewById(R.id.loginId);
 
-        //TODO: ConvertView¿¡ Àû¿ëÇÒ À§Á¬ ±â´É ¼­¼ú
+        //TODO: ConvertViewì— ì ìš©í•  ìœ„ì ¯ ê¸°ëŠ¥ ì„œìˆ 
         return null;
     }
 }
