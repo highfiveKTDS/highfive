@@ -1,4 +1,4 @@
-package com.ktds.shoppingbell.impl;
+package com.ktds.shoppingbell.define;
 
 public interface DialogWindow {
     //POST에 대한 DIALOG HANDLER ID 정의

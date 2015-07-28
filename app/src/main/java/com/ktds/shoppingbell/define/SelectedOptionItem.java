@@ -1,4 +1,4 @@
-package com.ktds.shoppingbell.impl;
+package com.ktds.shoppingbell.define;
 
 /**
  * Created by 206-021 on 2015-07-27.

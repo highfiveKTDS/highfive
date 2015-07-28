@@ -50,6 +50,7 @@ public class PostItemAdaptor extends BaseAdapter {
             convertView = inflater.inflate(R.layout.list_view, parent, false);
 
         }
+
         convertView.findViewById(R.id.btnLogin);
 
         return null;

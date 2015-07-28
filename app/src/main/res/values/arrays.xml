@@ -31,4 +31,11 @@
         <item>280</item>
     </string-array>
 
+    <string-array name="setting_bell">
+        <item>[알람 방식을 선택해주세요.]</item>
+        <item>벨</item>
+        <item>진동</item>
+        <item>무음</item>
+    </string-array>
+
 </resources>

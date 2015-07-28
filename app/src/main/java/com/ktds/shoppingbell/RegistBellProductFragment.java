@@ -17,12 +17,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.ktds.shoppingbell.impl.SelectedOptionItem;
-import com.ktds.shoppingbell.impl.SelectedShoppingMallItem;
+import com.ktds.shoppingbell.define.SelectedOptionItem;
+import com.ktds.shoppingbell.define.SelectedShoppingMallItem;
 
 public class RegistBellProductFragment extends Fragment {
     boolean isFirstAction = true;   //최초 첫번째 시작인지 판별하는 boolean 변수
     boolean isOptionCheck = false;
+    boolean isPriceCheck = false;
 
     private Button btnRegistBell;
 
@@ -78,6 +79,7 @@ public class RegistBellProductFragment extends Fragment {
         chkPrice.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                isPriceCheck = !isPriceCheck;
                 if (isFirstAction) {
                     isFirstAction = !isFirstAction;
                     etPrice.setVisibility(View.VISIBLE);
@@ -127,7 +129,7 @@ public class RegistBellProductFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //Validation Check
-                if(etModel.getText().toString().equals("")) {
+                if (etModel.getText().toString().equals("")) {
                     AlertDialog.Builder alert = new AlertDialog.Builder(v.getContext());
                     alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override
@@ -141,7 +143,7 @@ public class RegistBellProductFragment extends Fragment {
                     return;
                 }
 
-                if(spinnerShoppingmall_list.getSelectedItemPosition()==0) {
+                if (spinnerShoppingmall_list.getSelectedItemPosition() == 0) {
                     AlertDialog.Builder alert = new AlertDialog.Builder(v.getContext());
                     alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override
@@ -154,11 +156,11 @@ public class RegistBellProductFragment extends Fragment {
 
                     return;
                 }
-                String size  = "";
+                String size = "";
                 Log.d("CHK:", spinnerSize_list.getSelectedItem().toString());
 
-                if(isOptionCheck) {
-                    if(spinnerOption_list.getSelectedItemPosition()==SelectedOptionItem.EMPTY_ITEM) {
+                if (isOptionCheck) {
+                    if (spinnerOption_list.getSelectedItemPosition() == SelectedOptionItem.EMPTY_ITEM) {
                         AlertDialog.Builder alert = new AlertDialog.Builder(v.getContext());
                         alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                             @Override
@@ -171,7 +173,7 @@ public class RegistBellProductFragment extends Fragment {
                         return;
                     }
 
-                    if(spinnerSize_list.getSelectedItemPosition()==0) {
+                    if (spinnerSize_list.getSelectedItemPosition() == 0) {
                         AlertDialog.Builder alert = new AlertDialog.Builder(v.getContext());
                         alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                             @Override
@@ -184,29 +186,45 @@ public class RegistBellProductFragment extends Fragment {
                         return;
                     }
                     size = spinnerSize_list.getSelectedItem().toString();
-                }
-                else {
+                } else {
                     size = "empty";
                 }
+
+                if(isPriceCheck) {
+                    if(etPrice.getText().toString().equals("")) {
+                        AlertDialog.Builder alert = new AlertDialog.Builder(v.getContext());
+                        alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();     //닫기
+                            }
+                        });
+                        alert.setMessage("가격을 입력하세요!");
+                        alert.show();
+                        return;
+                    }
+
+                }
+
                 String model = etModel.getText().toString();
                 String price = etPrice.getText().toString();
 
 
                 String mall = "";
 
-                if(spinnerShoppingmall_list.getSelectedItemPosition()==SelectedShoppingMallItem.ITEM_AUCTION) {
+                if (spinnerShoppingmall_list.getSelectedItemPosition() == SelectedShoppingMallItem.ITEM_AUCTION) {
                     mall = "옥션";
                 }
-                if(spinnerShoppingmall_list.getSelectedItemPosition()==SelectedShoppingMallItem.ITEM_11STREET) {
+                if (spinnerShoppingmall_list.getSelectedItemPosition() == SelectedShoppingMallItem.ITEM_11STREET) {
                     mall = "11번가";
                 }
 
-                if(spinnerShoppingmall_list.getSelectedItemPosition()==SelectedShoppingMallItem.ITEM_SHOPPINGBELL) {
+                if (spinnerShoppingmall_list.getSelectedItemPosition() == SelectedShoppingMallItem.ITEM_SHOPPINGBELL) {
                     mall = "쇼핑벨 중고장터";
                 }
 
                 Toast.makeText(v.getContext()
-                        , model +"/" + price + "/" + mall + "/" + size
+                        , model + "/" + price + "/" + mall + "/" + size
                         , Toast.LENGTH_SHORT).show();
 
                 //FIXME: 쇼핑벨을 신청하는 기능 추가

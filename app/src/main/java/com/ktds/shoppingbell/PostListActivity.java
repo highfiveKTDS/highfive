@@ -5,10 +5,14 @@ import android.app.ProgressDialog;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
-import com.ktds.shoppingbell.impl.DialogWindow;
-import com.ktds.shoppingbell.impl.URLProtocol;
+import com.ktds.shoppingbell.adaptor.PostItemAdaptor;
+import com.ktds.shoppingbell.define.DialogWindow;
+import com.ktds.shoppingbell.define.URLProtocol;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -32,8 +36,13 @@ public class PostListActivity extends ActionBarActivity {
 
     private Handler handler;
     private ProgressDialog dialog;
-
+    private PostItemAdaptor adaptor;
     private String jSONData;
+
+    private Button btnSearchResult;
+    private EditText etSearch;
+    private ListView postListView;
+
 
     public Handler getHandler() {
         return handler;
@@ -45,7 +54,14 @@ public class PostListActivity extends ActionBarActivity {
         setContentView(R.layout.activity_post_list);
 
         handler = new Handler();
+        adaptor = new PostItemAdaptor(this);
+        dialog  = new ProgressDialog(this);
 
+        postListView = (ListView) findViewById(R.id.postPreview);
+        postListView.setAdapter(adaptor);
+
+        etSearch        = (EditText) findViewById(R.id.etSearch);
+        btnSearchResult = (Button) findViewById(R.id.btnSearchResult);
     }
 
     public void readPostList() {

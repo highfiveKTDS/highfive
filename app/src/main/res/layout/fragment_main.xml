@@ -57,7 +57,7 @@
                 android:background="@drawable/settings"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:id="@+id/btnConfiguration"/>
+                android:id="@+id/btnConfig"/>
 
         </LinearLayout>
 

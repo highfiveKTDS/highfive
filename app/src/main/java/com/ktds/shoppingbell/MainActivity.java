@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 
-import com.ktds.shoppingbell.impl.FragmentItem;
+import com.ktds.shoppingbell.define.FragmentItem;
 
 public class MainActivity extends FragmentActivity {
 

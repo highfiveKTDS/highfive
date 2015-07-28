@@ -8,6 +8,6 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/PostListActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/RegistBellProductFragment.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/adaptor/PostItemAdaptor.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/impl/DialogWindow.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/define/DialogWindow.java" charset="UTF-8" />
   </component>
 </project>
