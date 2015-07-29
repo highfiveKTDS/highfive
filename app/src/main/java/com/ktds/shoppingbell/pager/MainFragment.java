@@ -1,4 +1,4 @@
-package com.ktds.shoppingbell;
+package com.ktds.shoppingbell.pager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.ktds.shoppingbell.PostListActivity;
+import com.ktds.shoppingbell.R;
+import com.ktds.shoppingbell.SettingActivity;
+
 public class MainFragment extends Fragment {
 
     private Button btnFree;
@@ -16,11 +20,11 @@ public class MainFragment extends Fragment {
     private Button btnPost;
     private Button btnConfig;
 
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         final View fragmentMainView
                 = inflater.inflate(R.layout.fragment_main
                 , container

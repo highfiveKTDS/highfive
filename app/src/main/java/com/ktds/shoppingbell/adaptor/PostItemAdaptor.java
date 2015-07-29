@@ -1,3 +1,10 @@
+
+/********************************
+ * 2015-07-24
+ * Created by TaeHoon Kim
+ * 포스팅 아이템에 대해서 정의
+ ********************************/
+
 package com.ktds.shoppingbell.adaptor;
 
 import android.content.Context;
@@ -10,10 +17,6 @@ import com.ktds.shoppingbell.R;
 import com.ktds.shoppingbell.vo.PostVO;
 
 import java.util.List;
-
-/**
- * Created by 206-021 on 2015-07-24.
- */
 public class PostItemAdaptor extends BaseAdapter {
     private Context context;
     private List<PostVO> postVOList;

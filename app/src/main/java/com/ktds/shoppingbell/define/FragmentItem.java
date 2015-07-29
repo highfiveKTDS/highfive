@@ -1,8 +1,12 @@
+/********************************
+ * 2015-07-27
+ * Created by TaeHoon Kim
+ * FragmentItem
+ *
+ * Fragment 아이템에 대하여 정의
+ ********************************/
 package com.ktds.shoppingbell.define;
 
-/**
- * Created by 206-021 on 2015-07-27.
- */
 public interface FragmentItem {
 
     int FRAGMENT_MAX_ITEM = 2;

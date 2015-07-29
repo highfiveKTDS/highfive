@@ -1,4 +1,4 @@
-package com.ktds.shoppingbell;
+package com.ktds.shoppingbell.pager;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.ktds.shoppingbell.R;
 import com.ktds.shoppingbell.define.SelectedOptionItem;
 import com.ktds.shoppingbell.define.SelectedShoppingMallItem;
 
@@ -41,11 +42,14 @@ public class RegistBellProductFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        getActivity().setTitle("쇼핑벨 신청");
+
         View registBellProductView = setInitComponent(inflater, container);
         return registBellProductView;
     }
 
     private View setInitComponent(LayoutInflater inflater, ViewGroup container) {
+
         View registBellProductView
                 = inflater.inflate(R.layout.fragment_regist_bell_product
                 , container

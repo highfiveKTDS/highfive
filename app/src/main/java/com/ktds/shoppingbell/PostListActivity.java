@@ -58,7 +58,7 @@ public class PostListActivity extends ActionBarActivity {
         dialog  = new ProgressDialog(this);
 
         postListView = (ListView) findViewById(R.id.postPreview);
-        postListView.setAdapter(adaptor);
+        //postListView.setAdapter(adaptor);
 
         etSearch        = (EditText) findViewById(R.id.etSearch);
         btnSearchResult = (Button) findViewById(R.id.btnSearchResult);

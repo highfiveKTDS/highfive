@@ -1,3 +1,10 @@
+/********************************
+ * 2015-07-27
+ * Created by TaeHoon Kim
+ *
+ * 다이얼로그에 대한 로드시 핸들러 정의
+ ********************************/
+
 package com.ktds.shoppingbell.define;
 
 public interface DialogWindow {
