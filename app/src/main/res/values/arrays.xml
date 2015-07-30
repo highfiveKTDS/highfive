@@ -37,5 +37,11 @@
         <item>진동</item>
         <item>무음</item>
     </string-array>
+    
+    <string-array name="alarm">
+        <item>알림설정 > On </item>
+        <item>알림벨 > </item>
+        <item>진동/무음/벨 > </item>
+    </string-array >
 
 </resources>

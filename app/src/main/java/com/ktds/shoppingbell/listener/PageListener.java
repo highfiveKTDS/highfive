@@ -39,17 +39,15 @@ public class PageListener implements ViewPager.OnPageChangeListener {
         switch(pageNumber) {
             case 0:
                 ((MainActivity)context).setTitle("쇼핑벨 신청");
-                Log.d("PageSelected0:", pageNumber + "");
                 break;
             case 1:
                 ((MainActivity)context).setTitle("쇼핑벨 알림 리스트");
-                Log.d("PageSelected1:", pageNumber + "");
                 break;
             case 2:
-                Log.d("PageSelected2:", pageNumber + "");
+                ((MainActivity)context).setTitle("마이페이지");
                 break;
             case 3:
-                Log.d("PageSelected3:", pageNumber + "");
+                ((MainActivity)context).setTitle("설정");
                 break;
         }
 

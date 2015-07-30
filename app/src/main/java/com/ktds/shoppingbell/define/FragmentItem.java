@@ -9,9 +9,12 @@ package com.ktds.shoppingbell.define;
 
 public interface FragmentItem {
 
-    int FRAGMENT_MAX_ITEM = 2;
+    int FRAGMENT_MAX_ITEM = 4;
 
-    int FRAGMENT_ITEM_REGIST_BELL_OF_PRODUCT = 0;
-    int FRAGMENT_ITEM_MAIN = 1;
+    int FRAGMENT_ITEM_REGIST_BELL_OF_PRODUCT    = 0;
+    int FRAGMENT_ITEM_LIST_BELL_OF_PRODUCT      = 1;
+    int FRAGMENT_ITEM_MYPAGE                    = 2;
+    int FRAGMENT_ITEM_SETTING                   = 3;
+
 
 }

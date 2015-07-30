@@ -9,7 +9,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/define/DialogWindow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/define/FragmentItem.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/listener/PageListener.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/pager/MainFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/pager/MyPageFragment.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/ktds/shoppingbell/pager/RegistBellProductFragment.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
