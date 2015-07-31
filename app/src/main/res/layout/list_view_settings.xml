@@ -15,14 +15,16 @@
             <TextView
                 android:id="@+id/tvSettingOptionContent"
                 android:layout_marginLeft="20dp"
-                android:textSize="18dp"
+                android:layout_weight="5"
+                android:textSize="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="알림설정"/>
 
             <TextView
                 android:id="@+id/tvSettingSelection"
-                android:textSize="18dp"
+                android:textSize="15dp"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="OFF >"/>
