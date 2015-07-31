@@ -70,9 +70,9 @@ public class RegistBellProductFragment extends Fragment {
         spinnerSize_list         = (Spinner) registBellProductView.findViewById(R.id.spinnerSizeList);
 
         //필요 없는 컴포넌트 숨기기.
-        etPrice.setVisibility(View.GONE);
-        spinnerOption_list.setVisibility(View.GONE);
-        spinnerSize_list.setVisibility(View.GONE);
+        etPrice.setVisibility(View.INVISIBLE);
+        spinnerOption_list.setVisibility(View.INVISIBLE);
+        spinnerSize_list.setVisibility(View.INVISIBLE);
 
         setEventListener(registBellProductView); //버튼, Spinner등등 클릭 이벤트 기능이 있음
 
@@ -92,7 +92,7 @@ public class RegistBellProductFragment extends Fragment {
                 if (isChecked) {
                     etPrice.setVisibility(View.VISIBLE);
                 } else {
-                    etPrice.setVisibility(View.GONE);
+                    etPrice.setVisibility(View.INVISIBLE);
                     etPrice.setText("");
                 }
             }
@@ -109,8 +109,8 @@ public class RegistBellProductFragment extends Fragment {
                     spinnerSize_list.setSelection(0);   //아이템 0번째로 초기화([사이즈를 선택하세요])
                     spinnerOption_list.setSelection(0); //아이템 0번째로 초기화([쇼핑몰을 선택하세요])
 
-                    spinnerOption_list.setVisibility(View.GONE);
-                    spinnerSize_list.setVisibility(View.GONE);
+                    spinnerOption_list.setVisibility(View.INVISIBLE);
+                    spinnerSize_list.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -121,7 +121,7 @@ public class RegistBellProductFragment extends Fragment {
                 if (position == SelectedOptionItem.ITEM_SIZE) {
                     spinnerSize_list.setVisibility(View.VISIBLE);
                 } else {
-                    spinnerSize_list.setVisibility(View.GONE);
+                    spinnerSize_list.setVisibility(View.INVISIBLE);
                 }
             }
 

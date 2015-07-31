@@ -15,7 +15,7 @@
     </string-array>
 
     <string-array name="size_list">
-        <item>사이즈</item>
+        <item>사이즈 선택</item>
         <item>220</item>
         <item>225</item>
         <item>230</item>
