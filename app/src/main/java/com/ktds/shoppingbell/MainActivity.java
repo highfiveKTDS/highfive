@@ -19,10 +19,10 @@ public class MainActivity extends ActionBarActivity  {
 
     //private String[] pageTitle = {"알람신청", "리스트",  "마이페이지", "설정"};
     //https://guides.codepath.com/android/Sliding-Tabs-with-PagerSlidingTabStrip
-    private int []tabIcons = {R.drawable.abc_ab_share_pack_mtrl_alpha
-                            ,R.drawable.abc_btn_check_material
-                            ,R.drawable.abc_btn_check_to_on_mtrl_015
-                            ,R.drawable.abc_btn_radio_material};
+    private int []tabIcons = {R.drawable.write
+                            ,R.drawable.list
+                            ,R.drawable.person
+                            ,R.drawable.setting};
 
     private ViewPager pager;
     private PagerSlidingTabStrip tabs;

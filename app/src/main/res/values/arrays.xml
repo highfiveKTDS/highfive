@@ -3,19 +3,19 @@
 <resources>
 
     <string-array name="shoppingmall_list">
-        <item>[쇼핑몰을 선택하세요]</item>
+        <item>쇼핑몰을 선택</item>
         <item>11번가</item>
         <item>옥션</item>
         <item>쇼핑벨(중고장터)</item>
     </string-array>
 
     <string-array name="option_list">
-        <item>[항목을 선택하세요]</item>
+        <item>Option 선택</item>
         <item>사이즈</item>
     </string-array>
 
     <string-array name="size_list">
-        <item>[사이즈를 선택하세요]</item>
+        <item>사이즈</item>
         <item>220</item>
         <item>225</item>
         <item>230</item>

@@ -1,32 +1,29 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ktds.shoppingbell.pager.RegistBellProductFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:gravity="center"
-            android:textSize="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="쇼핑벨 신청"/>
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_marginTop="0dp"
             android:layout_marginLeft="0dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/etModel"
-                android:hint="모델명을 입력하세요. ex)nike-air"
+                android:hint="     모델명 입력(자세히)"
                 android:inputType="text"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
@@ -36,6 +33,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="0dp"
             android:layout_marginLeft="20dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -48,6 +46,7 @@
             <CheckBox
                 android:id="@+id/chkOption"
                 android:text="Option"
+                android:layout_marginLeft="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -57,14 +56,16 @@
             android:orientation="horizontal"
             android:layout_marginTop="0dp"
             android:layout_marginLeft="20dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/etPrice"
-                android:inputType="number"
-                android:hint="가격을 입력하세요. ex)20000"
-                android:layout_width="match_parent"
+                android:hint="     가격"
+                android:inputType="text"
+                android:layout_marginTop="15dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
@@ -77,8 +78,9 @@
             android:layout_height="wrap_content">
             <Spinner
                 android:id="@+id/spinnerOptionList"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:entries="@array/option_list"/>
         </LinearLayout>
 
@@ -92,7 +94,8 @@
 
             <Spinner
                 android:id="@+id/spinnerSizeList"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
+                android:layout_marginTop="15dp"
                 android:layout_height="wrap_content"
                 android:entries="@array/size_list"/>
 
@@ -107,7 +110,8 @@
 
             <Spinner
                 android:id="@+id/spinnerShoppingMallList"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
+                android:layout_marginTop="15dp"
                 android:layout_height="wrap_content"
                 android:entries="@array/shoppingmall_list"
                 />
@@ -116,16 +120,11 @@
 
         <Button
             android:id="@+id/btnRegistBell"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:text="쇼핑벨 신청!"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="오른쪽으로 드래그 해주세요:)"/>
-
+            android:text="쇼핑벨 신청!" />
     </LinearLayout>
 
 </FrameLayout>

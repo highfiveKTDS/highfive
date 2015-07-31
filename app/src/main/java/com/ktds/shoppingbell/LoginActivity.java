@@ -12,7 +12,6 @@ import android.widget.EditText;
 public class LoginActivity extends ActionBarActivity {
 
     private Button btnLogin;
-    private Button btnRegistAccount;
 
     private EditText etLoginId;
     private EditText etLoginPwd;
@@ -23,10 +22,7 @@ public class LoginActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        getSupportActionBar().hide();   //액션바 숨기기
-
         btnLogin    = (Button)findViewById(R.id.btnLogin);
-        btnRegistAccount = (Button)findViewById(R.id.btnRegistAccount);
 
         etLoginId   = (EditText)findViewById(R.id.etLoginId);
         etLoginPwd  = (EditText)findViewById(R.id.etLoginPwd);
